@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #fff;
+  --font-color: #46494c;
+  --background-color: #f4f4f9;
+  --transition: all 0.3s ease;
+  --transform-scale: scale(0.95);
+  --border: none;
+  --border-radius: 8px;
+  --cursor: pointer;
+}
+
+body {
+  max-height: 100vh;
+  font-family: sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+/* * Navigation Bar */
+nav {
+  height: 90px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 90px;
+}
+
+/* Logo */
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--font-color);
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.link {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--font-color);
+  transition: var(--transition);
+}
+
+.link:hover {
+  color: var(--primary-color);
+}
+
+/* User Profile */
+.btn-uname {
+  padding: 20px;
+  background-color: rgb(194, 232, 245);
+  color: var(--primary-color);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  cursor: var(--cursor);
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+.btn-uname:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-uname:active {
+  transform: var(--transform-scale);
+}
+
+/* * Main Content */
+main {
+  width: 100%;
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Content Section */
+.content {
+  max-width: 400px;
+}
+
+.heading1,
+.heading2 {
+  padding: 5px 0;
+  font-size: 42px;
+}
+
+.heading2 {
+  color: var(--primary-color);
+}
+
+.paragraph {
+  line-height: 1.6;
+}
+
+/* Booking Button */
+.btn-booking {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  cursor: var(--cursor);
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.btn-booking:hover {
+  background-color: rgb(52, 120, 170);
+}
+
+.btn-booking:active {
+  transform: var(--transform-scale);
+}
+
+/* Image Section */
+.content-image {
+  max-width: 400px;
+  height: auto;
+}
